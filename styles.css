@@ -1,0 +1,126 @@
+
+h1 {
+    font-size: 50px;
+}
+
+p {
+    font-size: 20px;
+}
+
+@media (max-width: 575px) {
+    h1 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 18px;
+    }
+}
+
+.boxes {
+    display: flex;
+    gap: 20px;
+}
+
+.box {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .boxes {
+        flex-wrap: wrap;
+    }
+    .box {
+        flex: 0 0 calc(50% - 10px);
+    }
+}
+
+@media (max-width: 575px) {
+    .boxes {
+        flex-direction: column;
+    }
+}
+
+.navbar {
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.portfolio {
+    margin-top: 30px;
+}
+
+.project-card {
+    margin-bottom: 20px;
+}
+
+.personal-info {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+@media (max-width: 575px) {
+    .portfolio {
+        margin-top: 20px;
+    }
+    .portfolio h2 {
+        font-size: 24px;
+    }
+    .project-card {
+        margin-bottom: 15px;
+    }
+    .personal-info {
+        margin-top: 10px;
+        padding: 15px;
+    }
+    footer p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .portfolio {
+        margin-top: 25px;
+    }
+    .portfolio h2 {
+        font-size: 28px;
+    }
+    .personal-info {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 769px) {
+    .portfolio {
+        margin-top: 40px;
+    }
+    .portfolio h2 {
+        font-size: 32px;
+    }
+    .personal-info {
+        padding: 25px;
+    }
+}
